@@ -84,13 +84,12 @@ void newGame() {
 
 String getWord(const char* const words[], uint16_t index) {
   char buffer[75];
-  const char wordDelimiter = '^';
   
   strcpy_P(buffer, (char*)pgm_read_word(&(words[index])));
 
   String details = String(buffer);
   String currentWord = details;
-  int delimiter = details.indexOf(wordDelimiter);
+  int delimiter = details.indexOf('^');
 
   if(delimiter != -1) {
     currentWord = details.substring(0, delimiter);
