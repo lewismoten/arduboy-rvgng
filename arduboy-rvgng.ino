@@ -43,10 +43,7 @@ void showTitle(String title){
   arduboy.setTextWrap(true);
 
   arduboy.setCursor(12, 3);
-  arduboy.print("The Video Game NameGenerator ported from\nhttp://videogamena.me");
-  
-  arduboy.setCursor(0, 40);
-  arduboy.print(title);
+  arduboy.print("The Video Game NameGenerator ported from\nhttp://videogamena.me\n" + title);
   
   arduboy.display();
 }
