@@ -56,13 +56,13 @@ void newGame() {
   wait = true;
   relatedWords = relatedDelimiter;
    
-  int firstNum = random(0, 518);
+  uint16_t firstNum = random(1, 519);
   String firstWord = getWord(firstWords, firstNum);
   String middleWord;
   String lastWord;
 
   do {
-    int middleNum = random(0, 349);
+    uint16_t middleNum = random(1, 350);
     middleWord = getWord(middleWords, middleNum);
   } while(
     middleWord == firstWord ||
@@ -70,7 +70,7 @@ void newGame() {
   );
    
   do {
-    int lastNum = random(0, 126);//412); // NOT ENOUGH FLASH MEMORY FOR THE REST!!!
+    uint16_t lastNum = random(1, 127);//412); // NOT ENOUGH FLASH MEMORY FOR THE REST!!!
     lastWord = getWord(lastWords, lastNum);
   } while(
     lastWord == firstWord ||
@@ -82,7 +82,7 @@ void newGame() {
   wait = false;
 }
 
-String getWord(const char* const words[], int index) {
+String getWord(const char* const words[], uint16_t index) {
   char buffer[75];
   const char wordDelimiter = '^';
   
