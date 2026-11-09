@@ -1,4 +1,4 @@
-# atom-video-game-name-generator package
+# arduboy-rvgng (Random Video Game Name Generator)
 
 ![The Video Game Generator](https://raw.githubusercontent.com/lewismoten/arduboy-rvgng/master/assets/the-video-game-generator.png)
 
