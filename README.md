@@ -1,3 +1,5 @@
+![arduboy-rvgng: Random video-game-name generator on Arduboy](docs/images/social-preview.png)
+
 # arduboy-rvgng (Random Video Game Name Generator)
 
 ![The Video Game Generator](https://raw.githubusercontent.com/lewismoten/arduboy-rvgng/master/assets/the-video-game-generator.png)
